@@ -11,6 +11,6 @@ const CartItem = ({ id, name, price, category, quantity }) => {
   );
 };
 
-export default CartItem;
+export default CartItem
 
 

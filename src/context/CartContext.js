@@ -1,14 +1,15 @@
+
 import { createContext, useState } from "react";
 
 export const CartContext = createContext({
     cart: []
-});
+})
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const cartItemIds = new Set(cart.map(item => item.id));
 
-    console.log(cart);
+    console.log(cart)
 
     const addItem = (item, quantity) => {
         if (!cartItemIds.has(item.id)) {
@@ -16,7 +17,7 @@ export const CartProvider = ({ children }) => {
         } else {
             console.error('Producto agregado');
         }
-    };
+    }
 
     const removeItem = (itemId) => {
         const cartUpdated = cart.filter(prod => prod.id !== itemId);
@@ -27,9 +28,6 @@ export const CartProvider = ({ children }) => {
         setCart([]);
     };
 
-    const isInCart = (itemId) => {
-        return cartItemIds.has(itemId);
-    };
 
     return (
         <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>

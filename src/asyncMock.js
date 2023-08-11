@@ -4,11 +4,14 @@ const products =[
         id: '1',
         name: 'Disco Kingston 120GB',
         price: 24.999,
-        category: 'Discos SSD',
+        category: 'DiscosSSD',
         img:'https://media.kingston.com/kingston/product-card/ktc-product-ssd-kc600-skc600-1-tn.png',
         stock: 20,
         description: 'La unidad de estado sólido A400 de Kingston mejora dramáticamente la capacidad de respuesta de su sistema existente con velocidades increíbles de inicio, carga y transferencia, comparadas con los discos duros mecánicos. Usando un controlador de última generación para leer y escribir a velocidades de hasta 500MB/seg y 450MB/seg, este SSD es 10 veces más rápido que un disco duro tradicional1 para un mejor rendimiento, mayor capacidad de respuesta y multi-tarea, y en general un sistema más rápido. Además de ser más confiable y duradero, el A400 está disponible en múltiples capacidades, desde 120GB a 960GB2.'
-    },
+   
+   
+      },
+    
 
     {
         id: '2',

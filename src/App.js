@@ -11,8 +11,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <CartProvider>
+    <CartProvider>
      <NavBar/>
+     
      <Routes>
       <Route path='/' element={<ItemListContainer/>}/>
       <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
