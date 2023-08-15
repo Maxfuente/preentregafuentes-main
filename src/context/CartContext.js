@@ -6,6 +6,7 @@ export const CartContext = createContext({
 })
 
 export const CartProvider = ({ children }) => {
+
     const [cart, setCart] = useState([]);
     const cartItemIds = new Set(cart.map(item => item.id));
 
@@ -13,7 +14,7 @@ export const CartProvider = ({ children }) => {
 
     const addItem = (item, quantity) => {
         if (!cartItemIds.has(item.id)) {
-            setCart(prev => [...prev, { ...item, quantity }]);
+            setCart(prev => [...prev, {...item, quantity }]);
         } else {
             console.error('Producto agregado');
         }
@@ -30,7 +31,7 @@ export const CartProvider = ({ children }) => {
 
 
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+        <CartContext.Provider value={{ cart, setCart, addItem, removeItem, clearCart }}>
             {children}
         </CartContext.Provider>
     );

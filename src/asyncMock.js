@@ -28,10 +28,30 @@ const products =[
         name: 'Audifonos',
         price: 14.999,
         category: 'Audifonos',
-        img:'https://casaroyal.cl/media/catalog/product/1/1/111625_7_1_.jpg?width=300&height=&canvas=300,&optimize=high&bg-color=255,255,255&fit=bounds',
+        img:'https://casaroyal.vtexassets.com/arquivos/ids/159161-800-800?v=638267518893730000&width=800&height=800&aspect=true',
         stock: 15,
         description: 'Gana conectividad y comodidad con los Audífonos inalámbricos WH-CH520 de Sony. Modelo con conexión BT 5.2 y una respuesta de frecuencia de 20 Hz - 20.000 Hz. Tu mejor alternativa para escuchar tus canciones preferidas y audios.'
     },
+
+    {
+      id: '4',
+      name: 'Audifonos',
+      price: 14.999,
+      category: 'Audifonos',
+      img:'https://casaroyal.vtexassets.com/arquivos/ids/157519-800-800?v=638271046729030000&width=800&height=800&aspect=true',
+      stock: 15,
+      description: 'Gana conectividad y comodidad con los Audífonos inalámbricos WH-CH520 de Sony. Modelo con conexión BT 5.2 y una respuesta de frecuencia de 20 Hz - 20.000 Hz. Tu mejor alternativa para escuchar tus canciones preferidas y audios.'
+  },
+
+  {
+    id: '5',
+    name: 'Audifonos',
+    price: 14.999,
+    category: 'Audifonos',
+    img:'https://casaroyal.vtexassets.com/arquivos/ids/157519-800-800?v=638271046729030000&width=800&height=800&aspect=true',
+    stock: 15,
+    description: 'Gana conectividad y comodidad con los Audífonos inalámbricos WH-CH520 de Sony. Modelo con conexión BT 5.2 y una respuesta de frecuencia de 20 Hz - 20.000 Hz. Tu mejor alternativa para escuchar tus canciones preferidas y audios.'
+},
 
 ]
 export const getProducts = () => {
