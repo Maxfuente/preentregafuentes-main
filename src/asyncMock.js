@@ -2,10 +2,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 const products =[
     {
         id: '1',
-        name: 'Disco Kingston 120GB',
+        name: 'Disco Kingston ',
         price: 24.999,
         category: 'DiscosSSD',
-        img:'https://media.kingston.com/kingston/product-card/ktc-product-ssd-kc600-skc600-1-tn.png',
+        img:'https://casaroyal.vtexassets.com/arquivos/ids/160290-800-800?v=638264963683030000&width=800&height=800&aspect=true',
         stock: 20,
         description: 'La unidad de estado sólido A400 de Kingston mejora dramáticamente la capacidad de respuesta de su sistema existente con velocidades increíbles de inicio, carga y transferencia, comparadas con los discos duros mecánicos. Usando un controlador de última generación para leer y escribir a velocidades de hasta 500MB/seg y 450MB/seg, este SSD es 10 veces más rápido que un disco duro tradicional1 para un mejor rendimiento, mayor capacidad de respuesta y multi-tarea, y en general un sistema más rápido. Además de ser más confiable y duradero, el A400 está disponible en múltiples capacidades, desde 120GB a 960GB2.'
    
@@ -18,7 +18,7 @@ const products =[
         name: 'Memoria Kingston ',
         price: 44.999,
         category: 'Memorias',
-        img:'https://media.kingston.com/kingston/product/ktc-product-memory-beast-ddr4-rgb-single-1-tn.png',
+        img:'https://media.spdigital.cl/thumbnails/products/o1rjkwxk_6d597d0b_thumbnail_512.jpg',
         stock: 10,
         description: 'Kingston FURY™ Beast DDR5 RGB1 te permite hacer overclocking en plataformas de juegos de ultima generación con tecnología de vanguardia. Experimenta los avances de velocidad superiores de DDR5 con el doble de bancos y doble longitud de ráfaga.'
     },

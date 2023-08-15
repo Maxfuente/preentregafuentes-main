@@ -1,13 +1,14 @@
 
 import { createContext, useState } from "react";
 
-export const CartContext = createContext({
-    cart: []
-})
+export const CartContext = createContext();
+    
+
 
 export const CartProvider = ({ children }) => {
 
-    const [cart, setCart] = useState([]);
+    const [ cart, setCart] = useState([]);
+    
     const cartItemIds = new Set(cart.map(item => item.id));
 
     console.log(cart)
@@ -28,6 +29,10 @@ export const CartProvider = ({ children }) => {
     const clearCart = () => {
         setCart([]);
     };
+
+    const totalQuantity =() => {
+        return cart.reduce((item, quantity) => item + item.quantity, 0)
+    }
 
 
     return (
