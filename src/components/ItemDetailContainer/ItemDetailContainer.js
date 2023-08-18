@@ -9,13 +9,14 @@ import { db } from "../../firebase/config";
 
 const ItemDetailContainer = () => {
     const [products, setProducts] = useState(null);
-    const [loading,setLoading] = useState(true)
+    const [,setLoading] = useState(true)
   
     const {itemId} = useParams()
     
     useEffect(() => {
       setLoading(true)
     const docRef = doc(db,'products', itemId)
+
     getDoc(docRef)
     .then(response => {
       const data = response.data()
@@ -31,7 +32,7 @@ const ItemDetailContainer = () => {
   
     return (
       <div className="ItemDetailContainer">
-        {products && <ItemDetail {...products} />}
+        <ItemDetail {...products} />
       </div>
     );
     

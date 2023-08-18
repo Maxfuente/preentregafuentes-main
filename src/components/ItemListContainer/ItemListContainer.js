@@ -15,11 +15,9 @@ const ItemListContainer = ({ greeting }) => {
     const { categoryId } = useParams();
   
     useEffect(() => {
-      setLoading(true)
+      //setLoading(true)
 
-      const collectionRef = categoryId
-      ? query(collection(db, 'products'),where('category','==', categoryId))
-      : collection(db,'products')
+      const collectionRef = categoryId ? query(collection(db, "products"),where('category','==', categoryId)): collection(db,'products')
         
       getDocs(collectionRef)
       .then(response => {
@@ -43,7 +41,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
       <div>
         <h2>{greeting}</h2>
-        <ItemList products={products} />
+        <ItemList products={products} loading={loading} />
       </div>
     );
   }
