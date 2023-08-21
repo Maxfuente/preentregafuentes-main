@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "electromax-dd35a",
   storageBucket: "electromax-dd35a.appspot.com",
   messagingSenderId: "366497987740",
-  appId: "1:366497987740:web:5b889f1ee71cfd05034159"
+  appId: "1:366497987740:web:5b889f1ee71cfd05034159",
 };
 
  const app = initializeApp(firebaseConfig);
